@@ -17,6 +17,8 @@ app.use(cors())
 const configuration = new Configuration({
   apiKey: process.env.CHATBOT_KEY,
 });
+const apiservice = process.env.CHATBOT_KEY;
+console.log(apiservice,'-----');
 // CHATBOT_KEY is key name in .env file. .env file should be in project root directory - format is below
 // CHATBOT_KEY="YOR-API-KEY"
 
